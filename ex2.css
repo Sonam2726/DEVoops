@@ -1,0 +1,48 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+    gap: 10px;
+    margin-left: 0px;
+   
+}
+h3{
+    font-size: 30px;
+    text-align: justify;
+}
+header{
+    
+    font-style: italic;
+    color: rgb(83, 52, 52);
+    text-shadow: 3px 3px 6px #DA22FF;
+}
+body{
+   
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad390);
+
+}
+.container1{
+   
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    text-align: center;
+}
+.container2{
+     background: linear-gradient(to right, #FF512F, #DD2476);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    text-align: center;
+}
+.container3{
+    background: linear-gradient(to right, #DA22FF, #942eec);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    text-align: center;
+}

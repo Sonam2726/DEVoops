@@ -18,7 +18,7 @@ else{
 
 }
 
-//TC-01 check script file exist
+//TC-03 check script file exist
 if(fs.existsSync("script.js")){
     console.log("script.js file exists");}
 else{
@@ -27,7 +27,7 @@ else{
 
 }
 
-//TC-01 check student file exist
+//TC-04 check student file exist
 if(fs.existsSync("student.json")){
     console.log("student.json file exists");}
 else{
@@ -35,4 +35,59 @@ else{
     passed=false;
 
 }
+//TC_05 name validation
+if(student.name.trim()!== "" ){
+    console.log(" Name Validation pass");
+}
+else{
+    console.log("Name Validation fail");
+    passed=false;
+}
+
+//TC-06Email validation 
+if(student.email.includes("@") ){
+    console.log(" Email Validation pass");
+}
+else{
+    console.log("Email Validation fail");
+    passed=false;
+}
+
+//TC=07 mobile validation
+if(student.mobile.length=== 10 ){
+    console.log(" Mobile Validation pass");
+}
+else{
+    console.log("Mobile Validation fail");
+    passed=false;
+}
+
+// TC-Branch validation
+if(student.branch.trim()!== "" ){
+    console.log(" Branch Validation pass");
+}
+else{
+    console.log("Branch Validation fail");
+    passed=false;
+}
+
+
+//TC=09 Password validation 
+if(student.password.length>=6 ){
+    console.log(" Password Validation pass");
+}
+else{
+    console.log("Password Validation fail");
+    passed=false;
+}
+
+//Tc=10 Registration success
+if(passed){
+    console.log(" Registration success");
+}
+else{
+    console.log("Registration failed");
+    
+}
+
 

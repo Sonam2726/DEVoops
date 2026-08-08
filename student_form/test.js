@@ -1,4 +1,4 @@
-const fs=reqired('fs');
+const fs=require('fs');
 let passed= true;
 console.log("Registration testing");
 //TC-01 check html file exist
@@ -87,6 +87,7 @@ if(passed){
 }
 else{
     console.log("Registration failed");
+    //process.exit();
     
 }
 

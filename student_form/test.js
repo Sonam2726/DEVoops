@@ -1,5 +1,6 @@
 const fs=require('fs');
 let passed= true;
+const data = JSON.parse(fs.readFileSync("student.json", "utf8"));
 console.log("Registration testing");
 //TC-01 check html file exist
 if(fs.existsSync("index.html")){
@@ -35,6 +36,7 @@ else{
     passed=false;
 
 }
+data.students.forEach((student) => {
 //TC_05 name validation
 if(student.name.trim()!== "" ){
     console.log(" Name Validation pass");
@@ -90,5 +92,6 @@ else{
     //process.exit();
     
 }
+})
 
 

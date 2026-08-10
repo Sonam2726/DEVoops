@@ -81,17 +81,16 @@ if(student.password.length>=6 ){
 else{
     console.log("Password Validation fail");
     passed=false;
-}
+}})
 
 //Tc=10 Registration success
-if(passed){
-    console.log(" Registration success");
-}
-else{
+if (passed) {
+    console.log("Registration success");
+    process.exit(0);
+} else {
     console.log("Registration failed");
-    //process.exit();
-    
+    process.exit(1);
 }
-})
+
 
 

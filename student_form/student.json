@@ -1,9 +1,9 @@
 {
   "students": [
     {
-      "name": "Sonam Bhurani ",
-      "email": "sonam@example.com",
-      "mobile": "9876543210",
+      "name": "",
+      "email": "sonamexample.com",
+      "mobile": "98765432",
       "password": "sonam123",
       "branch": "CSE"
     }
